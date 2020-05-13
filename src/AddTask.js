@@ -14,7 +14,7 @@ class  AddTask extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        if ( this.state.content.length != 0) {
+        if ( this.state.content.length !== 0) {
             this.props.modifyTodos(this.state)
             this.setState({
                 content:""
