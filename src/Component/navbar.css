@@ -1,0 +1,128 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    width: 100%;
+    height: 70px;
+    display: inline-block;
+}
+
+/* Style the links inside the navigation bar */
+.topnav span {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 21px 31px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.brand-logo{
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.topnav p {
+    float: left; 
+    margin-left: 30px;
+    color: rgb(255, 217, 49);
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+/* Change the color of links on hover */
+.topnav span:hover {
+  background-color: rgb(138, 138, 138);
+  color: black;
+}
+
+/* Add a color to the active/current link */
+/* .topnav span.active {
+  background-color: #4CAF50;
+  color: white;
+} */
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+  margin-right: 30px;
+}
+
+.topnav *:hover{
+    cursor: pointer;
+}
+
+#nav-toggle{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    .topnav-right p {
+      padding-left: 10%;
+    }
+
+    .topnav-right { 
+        display: none;
+    }
+
+    #nav-toggle{
+        padding-top: 10px;
+        display: block;
+        float:right;
+        -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+
+  }
+
+  @media screen and (max-width: 500px) {
+    .topnav-right.show {
+        position: relative; 
+        display: block; 
+        margin-top: 70px;
+        background-color:rgb(92, 92, 92);
+        float:none;
+        width: 100%;
+      }
+
+    #nav-toggle {
+      position: absolute;
+      margin-right: 5px;
+      right: 0;
+      top: 0;
+    } 
+    
+    
+    .topnav-right.show  span {
+      float: none;
+      margin: 2px;
+      display: block;
+      text-align: center;
+  
+    
+    }
+
+    .topnav-right.topnav-right.show a {
+      text-decoration: none;
+    }
+
+    .bounce-in-top {
+      -webkit-animation: bounce-in-top 1.1s both;
+              animation: bounce-in-top 1.1s both;
+    }
+    
+  }
+  
